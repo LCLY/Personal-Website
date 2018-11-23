@@ -12,7 +12,9 @@
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
 		/>
+		<!-- full version of jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -23,6 +25,13 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
+		<!-- Included fontawesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+			integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+			crossorigin="anonymous"
+		/>
 		<link href="home.css" rel="stylesheet" type="text/css" />
 		<script src="home.js" type="text/javascript"></script>
 
@@ -30,8 +39,46 @@
 	</head>
 
 	<body>
-		<nav class="navbar sticky-top navbar-dark bg-dark">
-			<a class="navbar-brand" href="#"><img class="logo" src="../assets/logo3.png"/></a>
+		<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+			<!-- logo is here -->
+			<a class="navbar-brand" href="#"
+				><img class="fadein logo" src="../assets/logo3.png"
+			/></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarText"
+				aria-controls="navbarText"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="fadein2 nav-link navfont" href="#"
+							>Home <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="fadein3 nav-link navfont" href="#">
+							<i class=" fas fa-user"></i> About</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="fadein4 nav-link navfont" href="#">
+							<i class=" fas fa-list-alt"> </i> Portfolio</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="fadein5 nav-link navfont" href="#"
+							><i class=" fas fa-envelope"></i> Contact</a
+						>
+					</li>
+				</ul>
+			</div>
 		</nav>
 
 		<div id="firstparallax"><div class="cloud"></div></div>

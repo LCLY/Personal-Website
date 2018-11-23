@@ -4,11 +4,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.sticky {
-	top: 0;
-	position: sticky;
-	position: -webkit-sticky;
-}
 
 .logo {
 	/* margin-left: 10px; */
@@ -70,10 +65,6 @@ body {
 	height: 1000px;
 }
 
-.navbar {
-	/* display: none; */
-}
-
 .cloud {
 	height: 100%;
 	filter: brightness(120%);
@@ -86,6 +77,11 @@ body {
 	-ms-animation: animate 50s linear infinite;
 	-moz-animation: animate 50s linear infinite;
 	-webkit-animation: animate 50s linear infinite;
+}
+
+.navfont {
+	font-size: 18px;
+	margin-left: 10px;
 }
 
 @keyframes animate {
@@ -119,4 +115,53 @@ body {
 	100% {
 		background-position: 5472px 0px;
 	} /* set this to the height of the image */
+}
+
+/*fade in animation*/
+.fadein {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+.fadein2 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+}
+
+.fadein3 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 4s;
+}
+
+.fadein4 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 5s;
+}
+
+.fadein5 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 6s;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
