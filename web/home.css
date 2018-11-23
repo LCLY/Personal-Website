@@ -5,16 +5,14 @@ body {
 	padding: 0;
 }
 
-.logo {
-	/* margin-left: 10px; */
-	width: 100px;
-	height: 50px;
-	/* z-index: 2; */
+body {
+	background-color: red;
 }
 
-/* .logo:hover {
-	cursor: pointer;
-} */
+.logo {
+	width: 100px;
+	height: 50px;
+}
 
 #firstparallax {
 	/* The image used */
@@ -65,6 +63,7 @@ body {
 	height: 1000px;
 }
 
+/*Cloud animation*/
 .cloud {
 	height: 100%;
 	filter: brightness(120%);
@@ -77,11 +76,6 @@ body {
 	-ms-animation: animate 50s linear infinite;
 	-moz-animation: animate 50s linear infinite;
 	-webkit-animation: animate 50s linear infinite;
-}
-
-.navfont {
-	font-size: 18px;
-	margin-left: 10px;
 }
 
 @keyframes animate {
@@ -121,31 +115,31 @@ body {
 .fadein {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 2s;
+	animation-duration: 1s;
 }
 
 .fadein2 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 3s;
+	animation-duration: 2s;
 }
 
 .fadein3 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 4s;
+	animation-duration: 3s;
 }
 
 .fadein4 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 5s;
+	animation-duration: 4s;
 }
 
 .fadein5 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 6s;
+	animation-duration: 5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -164,4 +158,16 @@ body {
 	100% {
 		opacity: 1;
 	}
+}
+
+/*Navbar*/
+.navfont {
+	font-size: 18px;
+	margin-left: 10px;
+	color: white;
+}
+
+.navbar {
+	position: fixed;
+	background: transparent !important;
 }
