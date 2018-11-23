@@ -54,7 +54,7 @@ body {
 
 #page {
 	/* position: relative; */
-	background-color: red;
+	background-color: white;
 	font-size: 20px;
 	height: 1000px;
 }
@@ -169,6 +169,6 @@ body {
 	background: rgba(35, 75, 208, 0.6);
 }
 
-.navbar-nav > .active > a:hover {
+.navbar .navbar-nav li a:hover {
 	color: yellow;
 }
