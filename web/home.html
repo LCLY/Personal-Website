@@ -12,11 +12,7 @@
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
 		/>
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -34,12 +30,26 @@
 	</head>
 
 	<body>
-		<div id="parallax"><div class="cloud"></div></div>
+		<nav class="navbar sticky-top navbar-dark bg-dark">
+			<a class="navbar-brand" href="#"><img class="logo" src="../assets/logo3.png"/></a>
+		</nav>
+
+		<div id="firstparallax"><div class="cloud"></div></div>
+
 		<div id="page">
 			Scroll Up and Down this page to see the parallax scrolling effect. This div is just here
 			to enable scrolling. Tip: Try to remove the background-attachment property to remove the
 			scrolling effect.
 		</div>
-		<div id="parallax"><div class="cloud"></div></div>
+
+		<div id="secondparallax"><div class="cloud"></div></div>
+
+		<div id="page">
+			Scroll Up and Down this page to see the parallax scrolling effect. This div is just here
+			to enable scrolling. Tip: Try to remove the background-attachment property to remove the
+			scrolling effect.
+		</div>
+
+		<div id="thirdparallax"></div>
 	</body>
 </html>
