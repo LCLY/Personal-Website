@@ -9,7 +9,7 @@ body {
 	font-size: 18px;
 	/* background-image: url("../assets/jumpout.JPG"); */
 	color: white;
-	background:rgba(174, 229, 243);
+	background: rgba(174, 229, 243);
 	/*=====added text=====*/
 }
 
@@ -149,19 +149,19 @@ body {
 }
 
 @-webkit-keyframes fadeIn {
-	0% {		
+	0% {
 		opacity: 0;
 	}
-	100% {		
+	100% {
 		opacity: 1;
 	}
 }
 
 @keyframes fadeIn {
-	0% {	
+	0% {
 		opacity: 0;
 	}
-	100% {	
+	100% {
 		opacity: 1;
 	}
 }
@@ -174,9 +174,9 @@ body {
 	color: white;
 }
 /* original nav bar*/
-#oriNav{
+#oriNav {
 	position: fixed;
-	background:transparent;
+	background: transparent;
 }
 /* scrolling nav bar*/
 #scrollNav {
