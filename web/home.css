@@ -3,6 +3,13 @@ body {
 	/* height: 1000px; */
 	margin: 0;
 	padding: 0;
+	/*=====added text=====*/
+	font-family: "Raleway", sans-serif;
+	/* padding: 1em 2em; */
+	font-size: 18px;
+	/* background-image: url("../assets/jumpout.JPG"); */
+	color: white;
+	/*=====added text=====*/
 }
 
 .logo {
@@ -54,7 +61,8 @@ body {
 
 #page {
 	/* position: relative; */
-	background-color: white;
+	background-color: rgba(174, 229, 243);
+	color: black;
 	font-size: 20px;
 	height: 1000px;
 }
@@ -68,10 +76,10 @@ body {
 	background-image: url("../assets/cloud.png");
 	background-size: cover;
 	background-attachment: fixed;
-	animation: animate 50s linear infinite;
-	-ms-animation: animate 50s linear infinite;
-	-moz-animation: animate 50s linear infinite;
-	-webkit-animation: animate 50s linear infinite;
+	animation: animate 70s linear infinite;
+	-ms-animation: animate 70s linear infinite;
+	-moz-animation: animate 70s linear infinite;
+	-webkit-animation: animate 70s linear infinite;
 }
 
 @keyframes animate {
@@ -123,7 +131,7 @@ body {
 .fadein3 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 3s;
+	animation-duration: 3.5s;
 }
 
 .fadein4 {
@@ -135,7 +143,7 @@ body {
 .fadein5 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 5s;
+	animation-duration: 4.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -166,9 +174,18 @@ body {
 .navbar {
 	position: fixed;
 	width: 100%;
-	background: rgba(35, 75, 208, 0.6);
+	background: rgba(35, 75, 208, 0.75);
 }
 
 .navbar .navbar-nav li a:hover {
 	color: yellow;
+}
+
+#title {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	/* right: 50%; */
+	text-align: center;
+	align-content: center;
 }
