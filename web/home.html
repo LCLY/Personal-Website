@@ -25,6 +25,8 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
+		<!--jquery plugin-->
+		<script src="jquery.color.min.js"></script>
 		<!-- Included fontawesome -->
 		<link
 			rel="stylesheet"
@@ -40,9 +42,10 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-default navbar-expand-lg sticky-top">
+		<!--first nav bar-->
+		<nav id="oriNav" class="navbar navbar-default navbar-expand-lg sticky-top">
 			<!-- logo is here -->
-			<a class="navbar-brand" href="#"><img class="fadein logo" src="../assets/logo3.png"/></a>
+			<a class="navbar-brand scrollHome" href="#title"><img class="fadein logo" src="../assets/logo3.png"/></a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -57,16 +60,53 @@
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="fadein2 nav-link navfont" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="fadein2 nav-link navfont scrollHome" href="#title">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="fadein3 nav-link navfont" href="#"> <i class=" fas fa-user"></i> About</a>
+						<a class="fadein3 nav-link scroll navfont" href="#about"> <i class=" fas fa-user"></i> About</a>
 					</li>
 					<li class="nav-item">
-						<a class="fadein4 nav-link navfont" href="#"> <i class=" fas fa-list-alt"> </i> Portfolio</a>
+						<a class="fadein4 nav-link scroll navfont" href="#portfolio">
+							<i class=" fas fa-list-alt"> </i> Portfolio</a
+						>
 					</li>
 					<li class="nav-item">
-						<a class="fadein5 nav-link navfont" href="#"><i class=" fas fa-envelope"></i> Contact</a>
+						<a class="fadein5 nav-link scroll navfont" href="#contact"><i class=" fas fa-envelope"></i> Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!--second nav bar-->
+		<nav id="scrollNav" class="navbar navbar-default navbar-expand-lg sticky-top">
+			<!-- logo is here -->
+			<a class="navbar-brand scrollHome" href="#title"><img class="fadein logo" src="../assets/logo3.png"/></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarText"
+				aria-controls="navbarText"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="fadein2 nav-link navfont scrollHome" href="#title">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="fadein3 nav-link scroll navfont" href="#about"> <i class=" fas fa-user"></i> About</a>
+					</li>
+					<li class="nav-item">
+						<a class="fadein4 nav-link scroll navfont" href="#portfolio">
+							<i class=" fas fa-list-alt"> </i> Portfolio</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="fadein5 nav-link scroll navfont" href="#contact"><i class=" fas fa-envelope"></i> Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -77,9 +117,10 @@
 				<h1 style="font-family: 'Poiret One', cursive; font-size: 100px">
 					Hi, I am
 					<span
+						id="animatedText"
 						class="txt-rotate"
 						data-period="2000"
-						data-rotate="[ &quot;Henry.&quot;, &quot;a Purdue student.&quot;, &quot;a Web Developer.&quot;, &quot;你好&quot;]"
+						data-rotate="[ &quot;Henry.&quot;, &quot;a Purdue student.&quot;, &quot;a Web Developer.&quot;, &quot;an Adventurer!&quot;]"
 					></span>
 				</h1>
 			</div>
@@ -87,18 +128,17 @@
 			<div class="cloud"></div>
 		</div>
 
-		<div id="page">
-			Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable
-			scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.
-		</div>
+		<div id="about"><div id="page">This is everything about me</div></div>
 
 		<div id="secondparallax"><div class="cloud"></div></div>
 
-		<div id="page">
-			Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable
-			scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.
+		<div id="portfolio">
+			<div id="page">
+				Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable
+				scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.
+			</div>
 		</div>
 
-		<div id="thirdparallax"></div>
+		<div id="thirdparallax"><div id="contact"></div></div>
 	</body>
 </html>

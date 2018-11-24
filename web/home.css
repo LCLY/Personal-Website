@@ -9,6 +9,7 @@ body {
 	font-size: 18px;
 	/* background-image: url("../assets/jumpout.JPG"); */
 	color: white;
+	background:rgba(174, 229, 243);
 	/*=====added text=====*/
 }
 
@@ -65,6 +66,7 @@ body {
 	color: black;
 	font-size: 20px;
 	height: 1000px;
+	padding-top: 90px;
 }
 
 /*Cloud animation*/
@@ -125,7 +127,7 @@ body {
 .fadein2 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 2s;
+	animation-duration: 2.5s;
 }
 
 .fadein3 {
@@ -137,7 +139,7 @@ body {
 .fadein4 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 4s;
+	animation-duration: 4.5s;
 }
 
 .fadein5 {
@@ -147,38 +149,44 @@ body {
 }
 
 @-webkit-keyframes fadeIn {
-	0% {
+	0% {		
 		opacity: 0;
 	}
-	100% {
+	100% {		
 		opacity: 1;
 	}
 }
 
 @keyframes fadeIn {
-	0% {
+	0% {	
 		opacity: 0;
 	}
-	100% {
+	100% {	
 		opacity: 1;
 	}
 }
 
 /*Navbar*/
+/*font color on nav bar*/
 .navfont {
 	font-size: 18px;
 	margin-left: 10px;
 	color: white;
 }
-
-.navbar {
+/* original nav bar*/
+#oriNav{
+	position: fixed;
+	background:transparent;
+}
+/* scrolling nav bar*/
+#scrollNav {
 	position: fixed;
 	width: 100%;
 	background: rgba(35, 75, 208, 0.75);
 }
-
+/* font color on navbar when hover*/
 .navbar .navbar-nav li a:hover {
-	color: yellow;
+	color: rgb(135, 221, 224);
 }
 
 #title {
@@ -188,4 +196,13 @@ body {
 	/* right: 50%; */
 	text-align: center;
 	align-content: center;
+	/* text-shadow: 4px 4px black; */
+	/* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa,
+		0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+		0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+		0 20px 20px rgba(0, 0, 0, 0.15); */
+}
+
+#animatedText {
+	font-weight: bold;
 }

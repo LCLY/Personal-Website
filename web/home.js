@@ -1,5 +1,28 @@
-$(document).ready(function() {
-	$(".navbar").hide();
+$(document).ready(function() {   
+	$("#scrollNav").hide();
+    var scrollLink = $(".scroll");
+    var scrollHome = $(".scrollHome");
+    // Smooth scrolling for home
+	scrollHome.click(function(e) {
+		e.preventDefault();
+		$("body,html").animate(
+			{
+				scrollTop: $(this.hash).offset().top-500,
+			},
+			1000,
+		);
+	});
+
+	// Smooth scrolling
+	scrollLink.click(function(e) {
+		e.preventDefault();
+		$("body,html").animate(
+			{
+				scrollTop: $(this.hash).offset().top,
+			},
+			1000,
+		);
+	});
 
 	var elements = document.getElementsByClassName("txt-rotate");
 	for (var i = 0; i < elements.length; i++) {
@@ -9,19 +32,24 @@ $(document).ready(function() {
 			new TxtRotate(elements[i], JSON.parse(toRotate), period);
 		}
 	}
-	// INJECT CSS
+	
 	var css = document.createElement("style");
 	css.type = "text/css";
 	css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-	document.body.appendChild(css);
-
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 200) {
-			$(".navbar").fadeIn(500);
+    document.body.appendChild(css);
+    
+    $(window).scroll(function() {
+        //after scrolling
+		if ($(this).scrollTop() > 500) { 
+            $("#oriNav").fadeOut(500); //original nav bar fades out
+            $("#scrollNav").fadeIn(500); //scrolling nav bar fades in      
 		} else {
-			$(".navbar").fadeOut(500);
+        //before scrolling
+            $("#oriNav").fadeIn(500); //original nav bar fades in
+            $("#scrollNav").fadeOut(500); //original nav bar fades out  
 		}
 	});
+	
 });
 
 var TxtRotate = function(el, toRotate, period) {
@@ -59,7 +87,7 @@ TxtRotate.prototype.tick = function() {
 	} else if (this.isDeleting && this.txt === "") {
 		this.isDeleting = false;
 		this.loopNum++;
-		delta = 500;
+		delta = 300;
 	}
 
 	setTimeout(function() {
