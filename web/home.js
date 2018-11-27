@@ -1,15 +1,15 @@
-$(document).ready(function() {   
+$(document).ready(function() {
 	$("#scrollNav").hide();
-    var scrollLink = $(".scroll");
-    var scrollHome = $(".scrollHome");
-    // Smooth scrolling for home
+	var scrollLink = $(".scroll");
+	var scrollHome = $(".scrollHome");
+	// Smooth scrolling for home
 	scrollHome.click(function(e) {
 		e.preventDefault();
 		$("body,html").animate(
 			{
-				scrollTop: $(this.hash).offset().top-500,
+				scrollTop: $(this.hash).offset().top - 500,
 			},
-			1000,
+			500,
 		);
 	});
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
 			{
 				scrollTop: $(this.hash).offset().top,
 			},
-			1000,
+			500,
 		);
 	});
 
@@ -32,24 +32,23 @@ $(document).ready(function() {
 			new TxtRotate(elements[i], JSON.parse(toRotate), period);
 		}
 	}
-	
+
 	var css = document.createElement("style");
 	css.type = "text/css";
 	css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-    document.body.appendChild(css);
-    
-    $(window).scroll(function() {
-        //after scrolling
-		if ($(this).scrollTop() > 500) { 
-            $("#oriNav").fadeOut(500); //original nav bar fades out
-            $("#scrollNav").fadeIn(500); //scrolling nav bar fades in      
+	document.body.appendChild(css);
+
+	$(window).scroll(function() {
+		//after scrolling
+		if ($(this).scrollTop() > 500) {
+			$("#oriNav").fadeOut(500); //original nav bar fades out
+			$("#scrollNav").fadeIn(500); //scrolling nav bar fades in
 		} else {
-        //before scrolling
-            $("#oriNav").fadeIn(500); //original nav bar fades in
-            $("#scrollNav").fadeOut(500); //original nav bar fades out  
+			//before scrolling
+			$("#oriNav").fadeIn(500); //original nav bar fades in
+			$("#scrollNav").fadeOut(500); //original nav bar fades out
 		}
 	});
-	
 });
 
 var TxtRotate = function(el, toRotate, period) {

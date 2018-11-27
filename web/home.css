@@ -9,7 +9,7 @@ body {
 	font-size: 18px;
 	/* background-image: url("../assets/jumpout.JPG"); */
 	color: white;
-	background: rgba(174, 229, 243);
+	background: white;
 	/*=====added text=====*/
 }
 
@@ -37,7 +37,7 @@ body {
 	background-image: url("../assets/skydive.JPG");
 
 	/* Set a specific height */
-	height: 1000px;
+	height: 600px;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -51,7 +51,7 @@ body {
 	background-image: url("../assets/landing.JPG");
 
 	/* Set a specific height */
-	height: 1000px;
+	height: 600px;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -62,7 +62,7 @@ body {
 
 #page {
 	/* position: relative; */
-	background-color: rgba(174, 229, 243);
+	background-color: white;
 	color: black;
 	font-size: 20px;
 	height: 1000px;
@@ -182,7 +182,7 @@ body {
 #scrollNav {
 	position: fixed;
 	width: 100%;
-	background: rgba(35, 75, 208, 0.75);
+	background: rgba(78, 80, 87, 0.85);
 }
 /* font color on navbar when hover*/
 .navbar .navbar-nav li a:hover {
@@ -205,4 +205,9 @@ body {
 
 #animatedText {
 	font-weight: bold;
+}
+
+.footer {
+	background: rgba(78, 80, 87, 0.85);
+	height: 400px;
 }
