@@ -49,6 +49,35 @@ $(document).ready(function() {
 			$("#scrollNav").fadeOut(500); //original nav bar fades out
 		}
 	});
+
+	//making animation for open and close navbar menu
+	var open = false;
+
+	$(".navbar-toggler").click(function() {
+		if (open) {
+			$("#circle").attr("class", "fas fa-plus-circle");
+			$("#circle2").attr("class", "fas fa-plus-circle");
+		} else {
+			$("#circle").attr("class", "fas fa-plus-circle open");
+			$("#circle2").attr("class", "fas fa-plus-circle open");
+		}
+
+		open = !open;
+	});
+
+	var div = document.getElementById("container");
+	var icon = document.getElementById("icon");
+	var open = false;
+
+	div.addEventListener("click", function() {
+		if (open) {
+			icon.className = "fa fa-arrow-down";
+		} else {
+			icon.className = "fa fa-arrow-down open";
+		}
+
+		open = !open;
+	});
 });
 
 var TxtRotate = function(el, toRotate, period) {
