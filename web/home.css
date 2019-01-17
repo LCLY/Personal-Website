@@ -176,6 +176,7 @@ body {
 /* original nav bar*/
 #oriNav {
 	position: fixed;
+	width: 100%;
 	background: transparent;
 }
 /* scrolling nav bar*/
@@ -210,4 +211,79 @@ body {
 .footer {
 	background: rgba(78, 80, 87, 0.85);
 	height: 400px;
+}
+
+#about {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+
+	color: #313131;
+	font-size: 45px;
+	font-weight: bold;
+
+	-webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+	0% {
+		color: blue;
+	}
+
+	10% {
+		color: #8e44ad;
+	}
+
+	20% {
+		color: #1abc9c;
+	}
+
+	30% {
+		color: #d35400;
+	}
+
+	40% {
+		color: blue;
+	}
+
+	50% {
+		color: #34495e;
+	}
+
+	60% {
+		color: blue;
+	}
+
+	70% {
+		color: #2980b9;
+	}
+	80% {
+		color: #f1c40f;
+	}
+
+	90% {
+		color: #2980b9;
+	}
+
+	100% {
+		color: pink;
+	}
+}
+
+.fa-plus-circle {
+	color: white;
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transition: transform 0.2s linear;
+}
+
+.fa-plus-circle.open {
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transition: transform 0.2s linear;
+}
+
+.navbar-toggler {
 }
