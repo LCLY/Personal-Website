@@ -70,7 +70,23 @@ body {
 }
 
 /*Cloud animation*/
-.cloud {
+.cloud1 {
+	position: relative;
+	height: 87%;
+	filter: brightness(120%);
+	filter: opacity(60%);
+	/* position: absolute; */
+	background-image: url("../assets/cloud.png");
+	background-size: cover;
+	background-attachment: fixed;
+	animation: animate 70s linear infinite;
+	-ms-animation: animate 70s linear infinite;
+	-moz-animation: animate 70s linear infinite;
+	-webkit-animation: animate 70s linear infinite;
+}
+
+.cloud2 {
+	position: relative;
 	height: 100%;
 	filter: brightness(120%);
 	filter: opacity(60%);
@@ -191,9 +207,9 @@ body {
 }
 
 #title {
-	position: absolute;
+	position: relative;
 	width: 100%;
-	top: 40%;
+	top: 30%;
 	/* right: 50%; */
 	text-align: center;
 	align-content: center;
@@ -204,6 +220,36 @@ body {
 		0 20px 20px rgba(0, 0, 0, 0.15); */
 }
 
+.imgcropper {
+	width: 14rem;
+	height: 14rem;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-left: 10%;
+}
+
+#profilepic {
+	position: relative;
+	display: inline;
+	margin: 0 auto;
+	height: 120%;
+	width: 100%;
+}
+
+/*
+#profilepic {
+	width: 11rem;
+	height: 12.5rem;
+	margin-top: 20px;
+	margin-left: 3rem;
+	margin-bottom: 20px;
+	border-radius: 70%;
+	align-items: left;
+	overflow: hidden;
+	color: #fff;
+}*/
+
 #animatedText {
 	font-weight: bold;
 }
@@ -212,17 +258,20 @@ body {
 	background: rgba(78, 80, 87, 0.85);
 	height: 400px;
 }
+#aboutTitle {
+	font-size: 60px;
+	font-weight: bold;
+	font-family: "Bungee Shade", cursive;
+}
 
 #about {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-
 	color: #313131;
-	font-size: 45px;
 	font-weight: bold;
 
-	-webkit-animation: colorchange 20s infinite alternate;
+	/*-webkit-animation: colorchange 20s infinite alternate;*/
 }
 
 @-webkit-keyframes colorchange {

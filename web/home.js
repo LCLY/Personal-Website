@@ -43,10 +43,30 @@ $(document).ready(function() {
 		if ($(this).scrollTop() > 500) {
 			$("#oriNav").fadeOut(500); //original nav bar fades out
 			$("#scrollNav").fadeIn(500); //scrolling nav bar fades in
+			if ($("#navbarText").hasClass("show")) {
+				console.log("SHOW!");
+			} else {
+				console.log("NO SHOW!");
+			}
+			if ($("#navbarText2").hasClass("show")) {
+				console.log("SHOW 2!");
+			} else {
+				console.log("NO SHOW 2!");
+			}
 		} else {
 			//before scrolling
 			$("#oriNav").fadeIn(500); //original nav bar fades in
 			$("#scrollNav").fadeOut(500); //original nav bar fades out
+			if ($("#navbarText").hasClass("show")) {
+				console.log("SHOW!");
+			} else {
+				console.log("NO SHOW!");
+			}
+			if ($("#navbarText2").hasClass("show")) {
+				console.log("SHOW 2!");
+			} else {
+				console.log("NO SHOW 2!");
+			}
 		}
 	});
 
@@ -64,22 +84,9 @@ $(document).ready(function() {
 
 		open = !open;
 	});
-
-	var div = document.getElementById("container");
-	var icon = document.getElementById("icon");
-	var open = false;
-
-	div.addEventListener("click", function() {
-		if (open) {
-			icon.className = "fa fa-arrow-down";
-		} else {
-			icon.className = "fa fa-arrow-down open";
-		}
-
-		open = !open;
-	});
 });
 
+//Code from https://css-tricks.com/snippets/css/typewriter-effect/
 var TxtRotate = function(el, toRotate, period) {
 	this.toRotate = toRotate;
 	this.el = el;

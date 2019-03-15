@@ -103,6 +103,7 @@
 			</div>
 		</nav>
 
+		<!-- Created a second nav bar for the color changing effect -->
 		<!-- second nav bar -->
 		<nav id="scrollNav" class="navbar navbar-default navbar-expand-lg sticky-top">
 			<!-- logo is here -->
@@ -142,6 +143,7 @@
 			</div>
 		</nav>
 
+		<!-- The first parallax page with the typing animation text -->
 		<div id="firstparallax">
 			<div id="title">
 				<h1 style="font-family: 'Poiret One', cursive; font-size: 100px">
@@ -150,22 +152,31 @@
 						id="animatedText"
 						class="txt-rotate"
 						data-period="2000"
-						data-rotate="[ &quot;Henry.&quot;, &quot;a Purdue student.&quot;, &quot;a Web Developer.&quot;, &quot;an Adventurer!&quot;]"
+						data-rotate='[ "Henry.", "a Purdue student.", "a Software Engineer.", "a Web Developer.", "an Adventurer!"]'
 					></span>
 				</h1>
 			</div>
 
-			<div class="cloud"></div>
+			<div class="cloud1"></div>
 		</div>
 
+		<!-- About page -->
 		<div id="about">
 			<div id="page">
-				<h1 id="about" style="text-align: center; font-family:'Bungee Shade', cursive;">About me</h1>
+				<h1 id="aboutTitle">About me</h1>
+				<div id="aboutContent">
+					<div class="imgcropper">
+						<img id="profilepic" src="../assets/croppedpic.jpeg" />
+					</div>
+					<div>TEST TEST TEST</div>
+				</div>
 			</div>
 		</div>
 
-		<div id="secondparallax"><div class="cloud"></div></div>
+		<!-- Second Parallax with cloud animation-->
+		<div id="secondparallax"><div class="cloud2"></div></div>
 
+		<!-- Porfolio page -->
 		<div id="portfolio">
 			<div id="page">
 				Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable
@@ -173,8 +184,10 @@
 			</div>
 		</div>
 
+		<!-- Third Parallax page-->
 		<div id="thirdparallax"></div>
 
+		<!-- Contact page-->
 		<div id="contact">
 			<div id="page">
 				Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable
