@@ -65,7 +65,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 20px;
-	height: 1000px;
+	height: 800px;
 	padding-top: 90px;
 }
 
@@ -219,24 +219,6 @@ body {
 		0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
 		0 20px 20px rgba(0, 0, 0, 0.15); */
 }
-
-.imgcropper {
-	width: 14rem;
-	height: 14rem;
-	position: relative;
-	overflow: hidden;
-	border-radius: 50%;
-	margin-left: 10%;
-}
-
-#profilepic {
-	position: relative;
-	display: inline;
-	margin: 0 auto;
-	height: 120%;
-	width: 100%;
-}
-
 /*
 #profilepic {
 	width: 11rem;
@@ -258,10 +240,22 @@ body {
 	background: rgba(78, 80, 87, 0.85);
 	height: 400px;
 }
+
+/* About Section*/
 #aboutTitle {
 	font-size: 60px;
 	font-weight: bold;
 	font-family: "Bungee Shade", cursive;
+}
+
+#aboutContent {
+	position: relative;
+	text-align: center;
+	width: 60%;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #about {
@@ -272,6 +266,25 @@ body {
 	font-weight: bold;
 
 	/*-webkit-animation: colorchange 20s infinite alternate;*/
+}
+
+/* cropped border*/
+.imgcropper {
+	width: 14rem;
+	height: 14rem;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#profilepic {
+	position: relative;
+	display: inline;
+	margin: 0 auto;
+	height: 120%;
+	width: 100%;
 }
 
 @-webkit-keyframes colorchange {
