@@ -65,27 +65,28 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 20px;
-	height: 800px;
+	height: 1000px;
 	padding-top: 90px;
 }
 
 /*Cloud animation*/
-.cloud1 {
+#cloud1 {
+	top: -128px;
 	position: relative;
-	height: 87%;
+	/*height: 87%;*/
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
 	background-image: url("../assets/cloud.png");
-	background-size: cover;
 	background-attachment: fixed;
+	background-size: cover;
 	animation: animate 70s linear infinite;
 	-ms-animation: animate 70s linear infinite;
 	-moz-animation: animate 70s linear infinite;
 	-webkit-animation: animate 70s linear infinite;
 }
 
-.cloud2 {
+#cloud2 {
 	position: relative;
 	height: 100%;
 	filter: brightness(120%);
@@ -209,7 +210,9 @@ body {
 #title {
 	position: relative;
 	width: 100%;
-	top: 30%;
+	top: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
 	/* right: 50%; */
 	text-align: center;
 	align-content: center;
