@@ -100,6 +100,8 @@ $(document).ready(function() {
 	//onload set the height of the cloud and the homepage
 	$("#firstparallax").css("height", window.innerHeight);
 	$("#cloud1").css("height", window.innerHeight);
+	//set the position of the title - 40% of the screen height
+	$("#title").css("top", window.innerHeight * (40 / 100));
 });
 
 //Code from https://css-tricks.com/snippets/css/typewriter-effect/
@@ -155,4 +157,6 @@ function resizeFirstPage() {
 	console.log("window innerHeight: " + window.innerHeight);
 	//readjust the height of the cloud to 87% of the screen height
 	$("#cloud1").css("height", window.innerHeight);
+	//40% of the screen height
+	$("#title").css("top", window.innerHeight * (40 / 100));
 }
