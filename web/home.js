@@ -44,28 +44,28 @@ $(document).ready(function() {
 			$("#oriNav").fadeOut(500); //original nav bar fades out
 			$("#scrollNav").fadeIn(500); //scrolling nav bar fades in
 			if ($("#navbarText").hasClass("show")) {
-				console.log("SHOW!");
+				//console.log("SHOW!");
 			} else {
-				console.log("NO SHOW!");
+				//console.log("NO SHOW!");
 			}
 			if ($("#navbarText2").hasClass("show")) {
-				console.log("SHOW 2!");
+				//console.log("SHOW 2!");
 			} else {
-				console.log("NO SHOW 2!");
+				//console.log("NO SHOW 2!");
 			}
 		} else {
 			//before scrolling
 			$("#oriNav").fadeIn(500); //original nav bar fades in
 			$("#scrollNav").fadeOut(500); //original nav bar fades out
 			if ($("#navbarText").hasClass("show")) {
-				console.log("SHOW!");
+				//console.log("SHOW!");
 			} else {
-				console.log("NO SHOW!");
+				//console.log("NO SHOW!");
 			}
 			if ($("#navbarText2").hasClass("show")) {
-				console.log("SHOW 2!");
+				//console.log("SHOW 2!");
 			} else {
-				console.log("NO SHOW 2!");
+				//console.log("NO SHOW 2!");
 			}
 		}
 	});
@@ -84,6 +84,22 @@ $(document).ready(function() {
 
 		open = !open;
 	});
+
+	//getting the screen resolution
+	console.log(
+		"browser width: " +
+			$(window).width() +
+			" height: " +
+			$(window).height() +
+			" innerwidth: " +
+			window.innerWidth +
+			" innerheight: " +
+			window.innerHeight,
+	);
+
+	//onload set the height of the cloud and the homepage
+	$("#firstparallax").css("height", window.innerHeight);
+	$("#cloud1").css("height", window.innerHeight);
 });
 
 //Code from https://css-tricks.com/snippets/css/typewriter-effect/
@@ -129,3 +145,14 @@ TxtRotate.prototype.tick = function() {
 		that.tick();
 	}, delta);
 };
+
+//var x = 0;
+//dynamically change the size of the homepage according to the window's size
+function resizeFirstPage() {
+	//var txt = (x += 1);
+	//document.getElementById("demo").innerHTML = txt;
+	$("#firstparallax").css("height", window.innerHeight);
+	console.log("window innerHeight: " + window.innerHeight);
+	//readjust the height of the cloud to 87% of the screen height
+	$("#cloud1").css("height", window.innerHeight);
+}
