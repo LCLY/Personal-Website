@@ -20,7 +20,7 @@ body {
 
 #firstparallax {
 	/* The image used */
-	background-image: url("../assets/jumpout.JPG");
+	background-image: url("../assets/jumpout-min.JPG");
 
 	/* Set a specific height */
 	height: 1000px;
@@ -34,7 +34,7 @@ body {
 
 #secondparallax {
 	/* The image used */
-	background-image: url("../assets/skydive.JPG");
+	background-image: url("../assets/skydive-min.JPG");
 
 	/* Set a specific height */
 	height: 600px;
@@ -48,7 +48,7 @@ body {
 
 #thirdparallax {
 	/* The image used */
-	background-image: url("../assets/landing.JPG");
+	background-image: url("../assets/landing-min.JPG");
 
 	/* Set a specific height */
 	height: 600px;
@@ -64,22 +64,28 @@ body {
 	/* position: relative; */
 	background-color: white;
 	color: black;
-	font-size: 20px;
+	font-size: 23px;
 	height: 1000px;
 	padding-top: 100px;
-	background-image: url("../assets/test.jpg");
+	background-image: url("../assets/bookandpen_blurred-min.jpg");
 	background-repeat: no-repeat;
-	background-position: -75px -482px;
-	background-size: 104% 1950px;
+	background-position: center;
+	background-size: cover;
+	overflow: auto;
 }
 
 #page2 {
 	/* position: relative; */
 	background-color: white;
 	color: black;
-	font-size: 20px;
+	font-size: 23px;
 	height: 1000px;
 	padding-top: 100px;
+	background-image: url("../assets/coding_blurred-min.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: auto;
 }
 
 #page3 {
@@ -89,6 +95,11 @@ body {
 	font-size: 20px;
 	height: 1000px;
 	padding-top: 100px;
+	background-image: url("../assets/computer.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: auto;
 }
 
 /*Cloud animation*/
@@ -156,7 +167,7 @@ body {
 	} /* set this to the height of the image */
 }
 
-/*fade in animation*/
+/*text fade in animation on navbar*/
 .fadein {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
@@ -184,7 +195,13 @@ body {
 .fadein5 {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-duration: 4.5s;
+	animation-duration: 5s;
+}
+
+.fadein6 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 5.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -275,25 +292,34 @@ body {
 
 /* About Section*/
 #aboutTitle {
+	text-align: center;
 	font-size: 60px;
 	font-weight: bold;
 	font-family: "Bungee Shade", cursive;
+	margin: 0;
 }
-
+#aboutContentBox {
+	position: relative;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(199, 199, 199, 0.521);
+}
 #aboutContent {
 	position: relative;
 	text-align: left;
-	width: 50%;
-	font-size: 23px;
+	width: 95%;
+	font-size: 18px;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 20px;
 }
 
 #about {
 	width: 100%;
 	margin: 0 auto;
-	text-align: center;
+	margin: 0;
 	color: #313131;
 	font-weight: bold;
 	/*-webkit-animation: colorchange 20s infinite alternate;*/
@@ -306,18 +332,79 @@ body {
 	position: relative;
 	overflow: hidden;
 	border-radius: 50%;
+	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #profilepic {
 	position: relative;
-	display: inline;
 	margin: 0 auto;
 	height: 120%;
 	width: 100%;
 }
 
+/* Skills Section*/
+#skillTitle {
+	color: white;
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: "Bungee Shade", cursive;
+}
+
+/*Portfolio Section*/
+#portfolioTitle {
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: "Bungee Shade", cursive;
+}
+
+@keyframes colorchange {
+	0% {
+		color: blue;
+	}
+
+	10% {
+		color: #8e44ad;
+	}
+
+	20% {
+		color: #1abc9c;
+	}
+
+	30% {
+		color: #d35400;
+	}
+
+	40% {
+		color: blue;
+	}
+
+	50% {
+		color: #34495e;
+	}
+
+	60% {
+		color: blue;
+	}
+
+	70% {
+		color: #2980b9;
+	}
+	80% {
+		color: #f1c40f;
+	}
+
+	90% {
+		color: #2980b9;
+	}
+
+	100% {
+		color: pink;
+	}
+}
 @-webkit-keyframes colorchange {
 	0% {
 		color: blue;
@@ -376,7 +463,4 @@ body {
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	transition: transform 0.2s linear;
-}
-
-.navbar-toggler {
 }
