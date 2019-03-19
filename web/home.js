@@ -102,6 +102,12 @@ $(document).ready(function() {
 	$("#cloud1").css("height", window.innerHeight);
 	//set the position of the title - 40% of the screen height
 	$("#title").css("top", window.innerHeight * (40 / 100));
+	//if the width of the browser and the width of the screen is less than
+	if (window.innerWidth < 1080 || screen.width < 1920) {
+		$("#aboutContentBox").css("width", (window.innerWidth * 60) / 100);
+	}
+
+	console.log("screen height: " + screen.height + " screen width: " + screen.width);
 });
 
 //Code from https://css-tricks.com/snippets/css/typewriter-effect/
@@ -159,4 +165,10 @@ function resizeFirstPage() {
 	$("#cloud1").css("height", window.innerHeight);
 	//40% of the screen height
 	$("#title").css("top", window.innerHeight * (40 / 100));
+	//if the width of the browser and the width of the screen is less than
+	if (window.innerWidth < 1080 || screen.width < 1920) {
+		$("#aboutContentBox").css("width", (window.innerWidth * 60) / 100);
+	} else {
+		$("#aboutContentBox").css("width", (window.innerWidth * 40) / 100);
+	}
 }
