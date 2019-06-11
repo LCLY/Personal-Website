@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	/*=====added text=====*/
-	font-family: "Raleway", sans-serif;
+	font-family: 'Raleway', sans-serif;
 	/* padding: 1em 2em; */
 	font-size: 18px;
 	/* background-image: url("../assets/jumpout.JPG"); */
@@ -20,7 +20,7 @@ body {
 
 #firstparallax {
 	/* The image used */
-	background-image: url("../assets/jumpout-min.JPG");
+	background-image: url('../assets/jumpout-min.JPG');
 
 	/* Set a specific height */
 	height: 1000px;
@@ -34,7 +34,7 @@ body {
 
 #secondparallax {
 	/* The image used */
-	background-image: url("../assets/skydive-min.JPG");
+	background-image: url('../assets/skydive-min.JPG');
 
 	/* Set a specific height */
 	height: 600px;
@@ -48,7 +48,7 @@ body {
 
 #thirdparallax {
 	/* The image used */
-	background-image: url("../assets/landing-min.JPG");
+	background-image: url('../assets/landing-min.JPG');
 
 	/* Set a specific height */
 	height: 600px;
@@ -67,7 +67,7 @@ body {
 	font-size: 23px;
 	height: 1000px;
 	padding-top: 100px;
-	background-image: url("../assets/bookandpen_blurred-min.jpg");
+	background-image: url('../assets/bookandpen_blurred-min.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -81,7 +81,7 @@ body {
 	font-size: 23px;
 	height: 1000px;
 	padding-top: 100px;
-	background-image: url("../assets/coding_blurred-min.jpg");
+	background-image: url('../assets/coding_blurred-min.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -95,7 +95,7 @@ body {
 	font-size: 20px;
 	height: 1000px;
 	padding-top: 100px;
-	background-image: url("../assets/computer.jpg");
+	background-image: url('../assets/computer.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -110,7 +110,7 @@ body {
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
-	background-image: url("../assets/cloud.png");
+	background-image: url('../assets/cloud.png');
 	background-attachment: fixed;
 	background-size: cover;
 	animation: animate 70s linear infinite;
@@ -125,7 +125,7 @@ body {
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
-	background-image: url("../assets/cloud.png");
+	background-image: url('../assets/cloud.png');
 	background-size: cover;
 	background-attachment: fixed;
 	animation: animate 70s linear infinite;
@@ -295,7 +295,7 @@ body {
 	text-align: center;
 	font-size: 60px;
 	font-weight: bold;
-	font-family: "Bungee Shade", cursive;
+	font-family: 'Bungee Shade', cursive;
 	margin: 0;
 }
 #aboutContentBox {
@@ -350,7 +350,7 @@ body {
 	text-align: center;
 	font-size: 60px;
 	font-weight: bold;
-	font-family: "Bungee Shade", cursive;
+	font-family: 'Bungee Shade', cursive;
 }
 
 /*Portfolio Section*/
@@ -358,7 +358,7 @@ body {
 	text-align: center;
 	font-size: 60px;
 	font-weight: bold;
-	font-family: "Bungee Shade", cursive;
+	font-family: 'Bungee Shade', cursive;
 }
 
 @keyframes colorchange {
