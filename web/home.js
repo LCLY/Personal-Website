@@ -44,45 +44,31 @@ $(document).ready(function() {
 			$('#oriNav').fadeOut(500); //original nav bar fades out
 			$('#scrollNav').fadeIn(500); //scrolling nav bar fades in
 			if ($('#navbarText').hasClass('show')) {
-				//console.log("SHOW!");
+				$('#navbarText').attr('class', 'navbar-collapse collapse show');
 			} else {
-				//console.log("NO SHOW!");
+				$('#navbarText').attr('class', 'navbar-collapse collapse');
 			}
 			if ($('#navbarText2').hasClass('show')) {
-				//console.log("SHOW 2!");
+				$('#navbarText2').attr('class', 'navbar-collapse collapse show');
 			} else {
-				//console.log("NO SHOW 2!");
+				$('#navbarText2').attr('class', 'navbar-collapse collapse');
 			}
 		} else {
 			//before scrolling
 			$('#oriNav').fadeIn(500); //original nav bar fades in
 			$('#scrollNav').fadeOut(500); //original nav bar fades out
 			if ($('#navbarText').hasClass('show')) {
-				//console.log("SHOW!");
 			} else {
-				//console.log("NO SHOW!");
 			}
 			if ($('#navbarText2').hasClass('show')) {
-				//console.log("SHOW 2!");
 			} else {
-				//console.log("NO SHOW 2!");
 			}
 		}
 	});
 
-	//making animation for open and close navbar menu
-	var open = false;
-
-	$('.navbar-toggler').click(function() {
-		if (open) {
-			$('#circle').attr('class', 'fas fa-plus-circle');
-			$('#circle2').attr('class', 'fas fa-plus-circle');
-		} else {
-			$('#circle').attr('class', 'fas fa-plus-circle open');
-			$('#circle2').attr('class', 'fas fa-plus-circle open');
-		}
-
-		open = !open;
+	//when the list in navbar is clicked hide the collapse
+	$(".navbar-nav li a:not('.dropdown-toggle')").on('click', function() {
+		$('.navbar-collapse').collapse('hide');
 	});
 
 	//getting the screen resolution
