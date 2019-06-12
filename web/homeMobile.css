@@ -293,14 +293,14 @@ body {
 /* About Section*/
 #aboutTitle {
 	text-align: center;
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: bold;
 	font-family: 'Bungee Shade', cursive;
 	margin: 0;
 }
 #aboutContentBox {
 	position: relative;
-	width: 40%;
+	width: 90% !important;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(199, 199, 199, 0.521);
@@ -309,11 +309,11 @@ body {
 	position: relative;
 	text-align: left;
 	width: 95%;
-	font-size: 18px;
+	font-size: 15px;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 20px;
+	padding: 5px;
 }
 
 #about {
