@@ -23,7 +23,7 @@ body {
 	background-image: url('../assets/jumpout-min.JPG');
 
 	/* Set a specific height */
-	height: 1000px;
+	height: 100vh;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -37,7 +37,7 @@ body {
 	background-image: url('../assets/skydive-min.JPG');
 
 	/* Set a specific height */
-	height: 600px;
+	height: 60vh;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -51,7 +51,7 @@ body {
 	background-image: url('../assets/landing-min.JPG');
 
 	/* Set a specific height */
-	height: 600px;
+	height: 60vh;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -65,7 +65,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	height: 1000px;
+	height: 110vh;
 	padding-top: 100px;
 	background-image: url('../assets/bookandpen_blurred-min.jpg');
 	background-repeat: no-repeat;
@@ -79,7 +79,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	height: 1000px;
+	height: 100vh;
 	padding-top: 100px;
 	background-image: url('../assets/coding_blurred-min.jpg');
 	background-repeat: no-repeat;
@@ -93,7 +93,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 20px;
-	height: 1000px;
+	height: 100vh;
 	padding-top: 100px;
 	background-image: url('../assets/computer.jpg');
 	background-repeat: no-repeat;
@@ -463,4 +463,11 @@ body {
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	transition: transform 0.2s linear;
+}
+
+/*if the screen min width is 1200 change the max width of container*/
+@media (min-width: 1200px) {
+	.container {
+		max-width: 90%;
+	}
 }
