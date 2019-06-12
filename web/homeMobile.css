@@ -1,0 +1,473 @@
+html,
+body {
+	/* height: 1000px; */
+	margin: 0;
+	padding: 0;
+	/*=====added text=====*/
+	font-family: 'Raleway', sans-serif;
+	/* padding: 1em 2em; */
+	font-size: 18px;
+	/* background-image: url("../assets/jumpout.JPG"); */
+	color: white;
+	background: white;
+	/*=====added text=====*/
+}
+
+.logo {
+	width: 100px;
+	height: 50px;
+}
+
+#firstparallax {
+	/* The image used */
+	background-image: url('../assets/jumpoutvertical.png');
+
+	/* Set a specific height */
+	height: 100vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#secondparallax {
+	/* The image used */
+	background-image: url('../assets/skydivevertical.png');
+
+	/* Set a specific height */
+	height: 60vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#thirdparallax {
+	/* The image used */
+	background-image: url('../assets/landing-min.JPG');
+
+	/* Set a specific height */
+	height: 60vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#page {
+	/* position: relative; */
+	background-color: white;
+	color: black;
+	font-size: 23px;
+	height: 110vh;
+	padding-top: 100px;
+	background-image: url('../assets/bookpenvertical.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: auto;
+}
+
+#page2 {
+	/* position: relative; */
+	background-color: white;
+	color: black;
+	font-size: 23px;
+	height: 100vh;
+	padding-top: 100px;
+	background-image: url('../assets/coding_blurred-min.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: auto;
+}
+
+#page3 {
+	/* position: relative; */
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	height: 100vh;
+	padding-top: 100px;
+	background-image: url('../assets/computervertical.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: auto;
+}
+
+/*Cloud animation*/
+#cloud1 {
+	top: -128px;
+	position: relative;
+	/*height: 87%;*/
+	filter: brightness(120%);
+	filter: opacity(60%);
+	/* position: absolute; */
+	background-image: url('../assets/cloud.png');
+	background-attachment: fixed;
+	background-size: cover;
+	animation: animate 70s linear infinite;
+	-ms-animation: animate 70s linear infinite;
+	-moz-animation: animate 70s linear infinite;
+	-webkit-animation: animate 70s linear infinite;
+}
+
+#cloud2 {
+	position: relative;
+	height: 100%;
+	filter: brightness(120%);
+	filter: opacity(60%);
+	/* position: absolute; */
+	background-image: url('../assets/cloud.png');
+	background-size: cover;
+	background-attachment: fixed;
+	animation: animate 70s linear infinite;
+	-ms-animation: animate 70s linear infinite;
+	-moz-animation: animate 70s linear infinite;
+	-webkit-animation: animate 70s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 5472px 0px;
+	} /* set this to the height of the image */
+}
+@-webkit-keyframes animate {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 5472px 0px;
+	} /* set this to the height of the image */
+}
+@-ms-keyframes animate {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 5472px 0px;
+	} /* set this to the height of the image */
+}
+@-moz-keyframes animate {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 5472px 0px;
+	} /* set this to the height of the image */
+}
+
+/*text fade in animation on navbar*/
+.fadein {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+
+.fadein2 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 2.5s;
+}
+
+.fadein3 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 3.5s;
+}
+
+.fadein4 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 4.5s;
+}
+
+.fadein5 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 5s;
+}
+
+.fadein6 {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 5.5s;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/*Navbar*/
+/*font color on nav bar*/
+.navfont {
+	font-size: 18px;
+	margin-left: 10px;
+	color: white;
+}
+/* original nav bar*/
+#oriNav {
+	position: fixed;
+	width: 100%;
+	background: transparent;
+}
+/* scrolling nav bar*/
+#scrollNav {
+	position: fixed;
+	width: 100%;
+	background: rgba(78, 80, 87, 0.85);
+}
+/* font color on navbar when hover*/
+.navbar .navbar-nav li a:hover {
+	color: rgb(135, 221, 224);
+}
+
+#title {
+	position: relative;
+	width: 100%;
+	/* right: 50%; */
+	text-align: center;
+	align-content: center;
+	/* text-shadow: 4px 4px black; */
+	/* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa,
+		0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+		0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+		0 20px 20px rgba(0, 0, 0, 0.15); */
+}
+
+#title2 {
+	position: absolute;
+	width: 100%;
+	margin-top: 240px;
+	/* right: 50%; */
+	text-align: center;
+	align-content: center;
+	color: white;
+}
+/*
+#profilepic {
+	width: 11rem;
+	height: 12.5rem;
+	margin-top: 20px;
+	margin-left: 3rem;
+	margin-bottom: 20px;
+	border-radius: 70%;
+	align-items: left;
+	overflow: hidden;
+	color: #fff;
+}*/
+
+#animatedText {
+	font-weight: bold;
+}
+
+.footer {
+	background: rgba(78, 80, 87, 0.85);
+	height: 400px;
+}
+
+/* About Section*/
+#aboutTitle {
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: 'Bungee Shade', cursive;
+	margin: 0;
+}
+#aboutContentBox {
+	position: relative;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(199, 199, 199, 0.521);
+}
+#aboutContent {
+	position: relative;
+	text-align: left;
+	width: 95%;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+#about {
+	width: 100%;
+	margin: 0 auto;
+	margin: 0;
+	color: #313131;
+	font-weight: bold;
+	/*-webkit-animation: colorchange 20s infinite alternate;*/
+}
+
+/* cropped border*/
+.imgcropper {
+	width: 14rem;
+	height: 14rem;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#profilepic {
+	position: relative;
+	margin: 0 auto;
+	height: 120%;
+	width: 100%;
+}
+
+/* Skills Section*/
+#skillTitle {
+	color: white;
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: 'Bungee Shade', cursive;
+}
+
+/*Portfolio Section*/
+#portfolioTitle {
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: 'Bungee Shade', cursive;
+}
+
+@keyframes colorchange {
+	0% {
+		color: blue;
+	}
+
+	10% {
+		color: #8e44ad;
+	}
+
+	20% {
+		color: #1abc9c;
+	}
+
+	30% {
+		color: #d35400;
+	}
+
+	40% {
+		color: blue;
+	}
+
+	50% {
+		color: #34495e;
+	}
+
+	60% {
+		color: blue;
+	}
+
+	70% {
+		color: #2980b9;
+	}
+	80% {
+		color: #f1c40f;
+	}
+
+	90% {
+		color: #2980b9;
+	}
+
+	100% {
+		color: pink;
+	}
+}
+@-webkit-keyframes colorchange {
+	0% {
+		color: blue;
+	}
+
+	10% {
+		color: #8e44ad;
+	}
+
+	20% {
+		color: #1abc9c;
+	}
+
+	30% {
+		color: #d35400;
+	}
+
+	40% {
+		color: blue;
+	}
+
+	50% {
+		color: #34495e;
+	}
+
+	60% {
+		color: blue;
+	}
+
+	70% {
+		color: #2980b9;
+	}
+	80% {
+		color: #f1c40f;
+	}
+
+	90% {
+		color: #2980b9;
+	}
+
+	100% {
+		color: pink;
+	}
+}
+
+.fa-plus-circle {
+	color: white;
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transition: transform 0.2s linear;
+}
+
+.fa-plus-circle.open {
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transition: transform 0.2s linear;
+}
+
+/*if the screen min width is 1200 change the max width of container*/
+@media (min-width: 1200px) {
+	.container {
+		max-width: 90%;
+	}
+}
