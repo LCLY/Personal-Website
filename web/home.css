@@ -51,7 +51,7 @@ body {
 	background-image: url('../assets/landing-min.JPG');
 
 	/* Set a specific height */
-	height: 60vh;
+	height: 40vh;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -268,6 +268,17 @@ body {
 	align-content: center;
 	color: white;
 }
+
+#title3 {
+	position: relative;
+	width: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	/* right: 50%; */
+	text-align: center;
+	align-content: center;
+	color: white;
+}
 /*
 #profilepic {
 	width: 11rem;
@@ -470,4 +481,24 @@ body {
 	.container {
 		max-width: 90%;
 	}
+}
+
+.ml6 {
+	position: relative;
+	font-weight: 900;
+	font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+	position: relative;
+	display: inline-block;
+	padding-top: 0.2em;
+	padding-right: 0.05em;
+	padding-bottom: 0.1em;
+	overflow: hidden;
+}
+
+.ml6 .letter {
+	display: inline-block;
+	line-height: 1em;
 }

@@ -327,8 +327,8 @@ body {
 
 /* cropped border*/
 .imgcropper {
-	width: 14rem;
-	height: 14rem;
+	width: 10rem;
+	height: 10rem;
 	position: relative;
 	overflow: hidden;
 	border-radius: 50%;
@@ -470,4 +470,24 @@ body {
 	.container {
 		max-width: 90%;
 	}
+}
+
+.ml6 {
+	position: relative;
+	font-weight: 900;
+	font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+	position: relative;
+	display: inline-block;
+	padding-top: 0.2em;
+	padding-right: 0.05em;
+	padding-bottom: 0.1em;
+	overflow: hidden;
+}
+
+.ml6 .letter {
+	display: inline-block;
+	line-height: 1em;
 }
