@@ -51,8 +51,8 @@ body {
 	background-image: url('../assets/landing-min.JPG');
 
 	/* Set a specific height */
-	height: 40vh;
-
+	height: 100%;
+	width: 100%;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -90,6 +90,7 @@ body {
 
 #page3 {
 	/* position: relative; */
+	text-align: center;
 	background-color: white;
 	color: black;
 	font-size: 20px;
@@ -268,17 +269,40 @@ body {
 	align-content: center;
 	color: white;
 }
+#titleHeader {
+	font-family: 'Poiret One', cursive;
+	font-size: 100px;
+}
 
 #title3 {
 	position: relative;
-	width: 100%;
-	margin-top: auto;
-	margin-bottom: auto;
-	/* right: 50%; */
-	text-align: center;
-	align-content: center;
+	display: inline-block;
 	color: white;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa,
+		0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+		0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+		0 20px 20px rgba(0, 0, 0, 0.15);
 }
+
+.ml6 {
+	position: relative;
+	font-weight: 900;
+	font-size: 4em;
+}
+
+.ml6 .text-wrapper {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 50%;
+	margin-bottom: 50%;
+}
+
+.ml6 .letter {
+	display: inline-block;
+	line-height: 1em;
+}
+
 /*
 #profilepic {
 	width: 11rem;
@@ -481,24 +505,4 @@ body {
 	.container {
 		max-width: 90%;
 	}
-}
-
-.ml6 {
-	position: relative;
-	font-weight: 900;
-	font-size: 3.3em;
-}
-
-.ml6 .text-wrapper {
-	position: relative;
-	display: inline-block;
-	padding-top: 0.2em;
-	padding-right: 0.05em;
-	padding-bottom: 0.1em;
-	overflow: hidden;
-}
-
-.ml6 .letter {
-	display: inline-block;
-	line-height: 1em;
 }
