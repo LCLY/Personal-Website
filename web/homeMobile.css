@@ -37,7 +37,8 @@ body {
 	background-image: url('../assets/skydivevertical.png');
 
 	/* Set a specific height */
-	height: 60vh;
+	height: 100%;
+	width: 100%;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -117,12 +118,19 @@ body {
 	-moz-animation: animate 70s linear infinite;
 	-webkit-animation: animate 70s linear infinite;
 }
+#cloud_2 {
+	position: absolute;
+	display: inline-block;
+	z-index: 0;
+}
 
 #cloud2 {
 	position: relative;
-	height: 100%;
+	display: inline-block;
+	height: 100vh;
+	width: 100%;
 	filter: brightness(120%);
-	filter: opacity(60%);
+	filter: opacity(70%);
 	/* position: absolute; */
 	background-image: url('../assets/cloud.png');
 	background-size: cover;
@@ -138,7 +146,7 @@ body {
 		background-position: 0px 0px;
 	}
 	100% {
-		background-position: 5472px 0px;
+		background-position: 5472px 10px;
 	} /* set this to the height of the image */
 }
 @-webkit-keyframes animate {
@@ -253,7 +261,6 @@ body {
 #title {
 	position: absolute;
 	width: 100%;
-	margin-top: 240px;
 	/* right: 50%; */
 	text-align: center;
 	align-content: center;
@@ -261,13 +268,23 @@ body {
 }
 
 #title2 {
-	position: absolute;
+	position: relative;
+	display: inline-block;
 	width: 100%;
-	margin-top: 240px;
 	/* right: 50%; */
 	text-align: center;
 	align-content: center;
 	color: white;
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+
+#title2Header {
+	position: relative;
+	display: inline-block;
+	font-family: 'Poiret One', cursive;
+	font-size: 45px;
+	overflow: hidden;
 }
 
 #title3 {
@@ -341,6 +358,7 @@ body {
 	width: 95%;
 	font-size: 15px;
 	margin-top: 20px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 5px;
@@ -520,4 +538,14 @@ body {
 .ml6 .letter {
 	display: inline-block;
 	line-height: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: inline-block;
+	}
 }
