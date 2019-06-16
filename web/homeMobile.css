@@ -557,11 +557,16 @@ body {
 }
 
 .card-font {
-	font-size: 20px;
+	font-size: 15px;
 	font-family: 'Exo', sans-serif;
 }
 
 .card-font2 {
-	font-size: 20px;
+	font-size: 14.5px;
+	font-family: 'Exo', sans-serif;
+}
+
+.card-font3 {
+	font-size: 15px;
 	font-family: 'Exo', sans-serif;
 }
