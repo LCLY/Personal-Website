@@ -275,8 +275,8 @@ body {
 	text-align: center;
 	align-content: center;
 	color: white;
-	margin-top: 20%;
-	margin-bottom: 20%;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 
 #title2Header {
@@ -546,6 +546,6 @@ body {
 	}
 
 	.mobile {
-		display: inline-block;
+		display: block;
 	}
 }
