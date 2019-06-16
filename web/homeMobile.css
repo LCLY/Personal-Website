@@ -318,7 +318,7 @@ body {
 .ml6 {
 	position: relative;
 	font-weight: 900;
-	font-size: 4em;
+	font-size: 25px;
 }
 
 .ml6 .text-wrapper {
@@ -538,26 +538,6 @@ body {
 	}
 }
 
-.ml6 {
-	position: relative;
-	font-weight: 900;
-	font-size: 3.3em;
-}
-
-.ml6 .text-wrapper {
-	position: relative;
-	display: inline-block;
-	padding-top: 0.2em;
-	padding-right: 0.05em;
-	padding-bottom: 0.1em;
-	overflow: hidden;
-}
-
-.ml6 .letter {
-	display: inline-block;
-	line-height: 1em;
-}
-
 @media screen and (max-width: 768px) {
 	.desktop {
 		display: none;
@@ -568,6 +548,20 @@ body {
 	}
 }
 
+.card-title {
+	font-family: 'Exo', sans-serif !important;
+}
+
 .card-deck {
 	margin-top: 0px;
+}
+
+.card-font {
+	font-size: 20px;
+	font-family: 'Exo', sans-serif;
+}
+
+.card-font2 {
+	font-size: 20px;
+	font-family: 'Exo', sans-serif;
 }

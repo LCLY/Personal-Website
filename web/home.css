@@ -37,7 +37,7 @@ body {
 	background-image: url('../assets/skydive-min.JPG');
 
 	/* Set a specific height */
-	height: 60vh;
+	/* height: 60vh; */
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -264,6 +264,7 @@ body {
 
 #title {
 	position: relative;
+	display: inline-block;
 	width: 100%;
 	/* right: 50%; */
 	text-align: center;
@@ -276,13 +277,15 @@ body {
 }
 
 #title2 {
-	position: absolute;
+	position: relative;
+	display: inline-block;
 	width: 100%;
-	margin-top: 240px;
 	/* right: 50%; */
 	text-align: center;
 	align-content: center;
 	color: white;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 #title2Header {
 	font-size: 80px;
@@ -306,15 +309,16 @@ body {
 .ml6 {
 	position: relative;
 	font-weight: 900;
-	font-size: 5em;
+	font-size: 3.5em;
 }
 
 .ml6 .text-wrapper {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	margin-top: 50%;
-	margin-bottom: 50%;
+	padding-bottom: 6px;
+	margin-top: 15%;
+	margin-bottom: 15%;
 }
 
 .ml6 .letter {
@@ -547,6 +551,15 @@ body {
 		display: none;
 	}
 }
+
+.card-title {
+	font-family: 'Exo', sans-serif !important;
+}
+
 .card-deck {
 	margin-top: 80px;
+}
+
+.card-font {
+	font-family: 'Exo', sans-serif;
 }
