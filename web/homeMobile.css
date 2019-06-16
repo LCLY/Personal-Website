@@ -567,3 +567,7 @@ body {
 		display: block;
 	}
 }
+
+.card-deck {
+	margin-top: 0px;
+}
