@@ -124,7 +124,6 @@ $(document).ready(function() {
 		});
 });
 
-//Code from https://css-tricks.com/snippets/css/typewriter-effect/
 var TxtRotate = function(el, toRotate, period) {
 	this.toRotate = toRotate;
 	this.el = el;

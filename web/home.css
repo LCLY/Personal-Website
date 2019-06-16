@@ -120,6 +120,21 @@ body {
 	-webkit-animation: animate 70s linear infinite;
 }
 
+#cloud_1 {
+	position: relative;
+	height: 100%;
+	filter: brightness(120%);
+	filter: opacity(60%);
+	/* position: absolute; */
+	background-image: url('../assets/cloud.png');
+	background-size: cover;
+	background-attachment: fixed;
+	animation: animate 30s linear infinite;
+	-ms-animation: animate 30s linear infinite;
+	-moz-animation: animate 30s linear infinite;
+	-webkit-animation: animate 30s linear infinite;
+}
+
 #cloud2 {
 	position: relative;
 	height: 100%;
@@ -488,7 +503,20 @@ body {
 		color: pink;
 	}
 }
-
+#cloud_1 {
+	position: relative;
+	height: 100%;
+	filter: brightness(120%);
+	filter: opacity(60%);
+	/* position: absolute; */
+	background-image: url('../assets/cloud.png');
+	background-size: cover;
+	background-attachment: fixed;
+	animation: animate 30s linear infinite;
+	-ms-animation: animate 30s linear infinite;
+	-moz-animation: animate 30s linear infinite;
+	-webkit-animation: animate 30s linear infinite;
+}
 .fa-plus-circle {
 	color: white;
 	transform: rotate(0deg);

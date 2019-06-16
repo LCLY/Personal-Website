@@ -149,20 +149,36 @@
 		</nav>
 
 		<!-- The first parallax page with the typing animation text -->
-		<div id="firstparallax" style="border: green 2px solid">
-			<div id="title" style="border: blue 2px solid">
-				<h1 id="titleHeader" style="border: red 2px solid">
+		<div class="desktop" id="firstparallax">
+			<div id="title">
+				<h1 id="titleHeader">
 					Hi, I am
 					<span
 						id="animatedText"
 						class="txt-rotate"
 						data-period="2000"
 						data-rotate='[ "Henry.", "a Purdue student.", "a Software Engineer.", "a Web Developer.", "an Adventurer!"]'
-						style="border: yellow 2px solid"
 					></span>
 				</h1>
 			</div>
-			<div id="cloud1" style="border: yellow 2px solid"></div>
+			<div id="cloud1"><div id="cloud_1"></div></div>
+		</div>
+
+		<div class="mobile" id="firstparallax">
+			<div id="title">
+				<h1 id="titleHeader">
+					Hi, I am <br />
+					<span
+						id="animatedText"
+						class="txt-rotate"
+						data-period="2000"
+						data-rotate='[ "Henry.", "a Purdue student.", "a Software Engineer.", "a Web Developer.", "an Adventurer!"]'
+					></span>
+				</h1>
+			</div>
+			<div id="cloud1">
+				<div id="cloud_1"></div>
+			</div>
 		</div>
 
 		<!-- About page -->
@@ -343,7 +359,7 @@
 				<div>
 					<h1 class="ml6" style="text-align: center;">
 						<span class="text-wrapper">
-							<span class="letters">Portfolio</span>
+							<span class="letters">Projects</span>
 						</span>
 					</h1>
 				</div>

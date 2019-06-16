@@ -118,6 +118,22 @@ body {
 	-moz-animation: animate 70s linear infinite;
 	-webkit-animation: animate 70s linear infinite;
 }
+
+#cloud_1 {
+	position: relative;
+	height: 100%;
+	filter: brightness(120%);
+	filter: opacity(60%);
+	/* position: absolute; */
+	background-image: url('../assets/cloud.png');
+	background-size: cover;
+	background-attachment: fixed;
+	animation: animate 40s linear infinite;
+	-ms-animation: animate 40s linear infinite;
+	-moz-animation: animate 40s linear infinite;
+	-webkit-animation: animate 40s linear infinite;
+}
+
 #cloud_2 {
 	position: absolute;
 	display: inline-block;
@@ -146,7 +162,7 @@ body {
 		background-position: 0px 0px;
 	}
 	100% {
-		background-position: 5472px 10px;
+		background-position: 5472px 1000px;
 	} /* set this to the height of the image */
 }
 @-webkit-keyframes animate {
@@ -256,7 +272,7 @@ body {
 	position: relative;
 	display: inline-block;
 	font-family: 'Poiret One', cursive;
-	font-size: 30px;
+	font-size: 50px;
 }
 #title {
 	position: absolute;
@@ -265,6 +281,8 @@ body {
 	text-align: center;
 	align-content: center;
 	color: white;
+	margin-top: 60%;
+	margin-bottom: 50%;
 }
 
 #title2 {
