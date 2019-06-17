@@ -65,7 +65,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	height: 110vh;
+	/* height: 110vh; */
 	padding-top: 100px;
 	background-image: url('../assets/bookandpen_blurred-min.jpg');
 	background-repeat: no-repeat;
@@ -105,10 +105,9 @@ body {
 
 /*Cloud animation*/
 #cloud1 {
-	/* top: -128px; */
+	top: -128px;
 	position: relative;
 	/* height: 100%; */
-	height: 100%;
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
@@ -264,10 +263,9 @@ body {
 }
 
 #title {
-	position: absolute;
+	position: relative;
+	display: inline-block;
 	width: 100%;
-	margin-top: 500px;
-	margin-bottom: 50%;
 	/* right: 50%; */
 	text-align: center;
 	align-content: center;
