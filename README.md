@@ -1,2 +1,2 @@
 # Personal-Website
-A personal website that talks about me
+Personal website to see my work and know more about me
