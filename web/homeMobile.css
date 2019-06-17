@@ -365,10 +365,11 @@ body {
 }
 #aboutContentBox {
 	position: relative;
-	width: 90% !important;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(199, 199, 199, 0.521);
+	margin-bottom: 20%;
 }
 #aboutContent {
 	position: relative;
@@ -376,10 +377,11 @@ body {
 	width: 95%;
 	font-size: 15px;
 	margin-top: 20px;
-	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 5px;
+	font-family: 'Arsenal', serif;
+	line-height: 14px;
 }
 
 #about {
@@ -387,7 +389,6 @@ body {
 	margin: 0 auto;
 	margin: 0;
 	color: #313131;
-	font-weight: bold;
 	/*-webkit-animation: colorchange 20s infinite alternate;*/
 }
 
