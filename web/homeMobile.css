@@ -66,7 +66,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	height: 110vh;
+	/* height: 100vh; */
 	padding-top: 100px;
 	background-image: url('../assets/bookpenvertical.jpg');
 	background-repeat: no-repeat;
@@ -369,6 +369,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(199, 199, 199, 0.521);
+	margin-bottom: 20%;
 }
 #aboutContent {
 	position: relative;
@@ -376,10 +377,11 @@ body {
 	width: 95%;
 	font-size: 15px;
 	margin-top: 20px;
-	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 5px;
+	font-family: 'Arsenal', serif;
+	line-height: 14px;
 }
 
 #about {
@@ -387,7 +389,6 @@ body {
 	margin: 0 auto;
 	margin: 0;
 	color: #313131;
-	font-weight: bold;
 	/*-webkit-animation: colorchange 20s infinite alternate;*/
 }
 
@@ -422,7 +423,7 @@ body {
 /*Portfolio Section*/
 #portfolioTitle {
 	text-align: center;
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: bold;
 	font-family: 'Bungee Shade', cursive;
 }
@@ -557,12 +558,12 @@ body {
 }
 
 .card-font {
-	font-size: 15px;
+	font-size: 13px;
 	font-family: 'Exo', sans-serif;
 }
 
 .card-font2 {
-	font-size: 14.5px;
+	font-size: 13px;
 	font-family: 'Exo', sans-serif;
 }
 
