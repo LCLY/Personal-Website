@@ -7,7 +7,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 	/* padding: 1em 2em; */
 	font-size: 18px;
-	/* background-image: url("../assets/jumpout.JPG"); */
+	/* background-image: url("./assets/jumpout.JPG"); */
 	color: white;
 	background: white;
 	/*=====added text=====*/
@@ -20,7 +20,7 @@ body {
 
 #firstparallax {
 	/* The image used */
-	background-image: url('../assets/jumpout-min.JPG');
+	background-image: url('./assets/jumpout-min.JPG');
 
 	/* Set a specific height */
 	/* height: 100vh; */
@@ -34,7 +34,7 @@ body {
 
 #secondparallax {
 	/* The image used */
-	background-image: url('../assets/skydive-min.JPG');
+	background-image: url('./assets/skydive-min.JPG');
 
 	/* Set a specific height */
 	/* height: 60vh; */
@@ -48,7 +48,7 @@ body {
 
 #thirdparallax {
 	/* The image used */
-	background-image: url('../assets/landing-min.JPG');
+	background-image: url('./assets/landing-min.JPG');
 
 	/* Set a specific height */
 	height: 100%;
@@ -67,7 +67,7 @@ body {
 	font-size: 23px;
 	/* height: 110vh; */
 	padding-top: 100px;
-	background-image: url('../assets/bookandpen_blurred-min.jpg');
+	background-image: url('./assets/bookandpen_blurred-min.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -81,7 +81,7 @@ body {
 	font-size: 23px;
 	height: 100vh;
 	padding-top: 100px;
-	background-image: url('../assets/coding_blurred-min.jpg');
+	background-image: url('./assets/coding_blurred-min.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -96,7 +96,7 @@ body {
 	font-size: 20px;
 	height: 100vh;
 	padding-top: 100px;
-	background-image: url('../assets/computer.jpg');
+	background-image: url('./assets/computer.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -113,7 +113,7 @@ body {
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
-	background-image: url('../assets/cloud.png');
+	background-image: url('./assets/cloud.png');
 	background-attachment: fixed;
 	background-size: cover;
 	animation: animate 70s linear infinite;
@@ -128,7 +128,7 @@ body {
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
-	background-image: url('../assets/cloud.png');
+	background-image: url('./assets/cloud.png');
 	background-size: cover;
 	background-attachment: fixed;
 	animation: animate 30s linear infinite;
@@ -143,7 +143,7 @@ body {
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
-	background-image: url('../assets/cloud.png');
+	background-image: url('./assets/cloud.png');
 	background-size: cover;
 	background-attachment: fixed;
 	animation: animate 70s linear infinite;
