@@ -527,15 +527,13 @@ body {
 	transition: transform 0.2s linear;
 }
 
-/*if the screen min width is 1200 change the max width of container*/
-@media (min-width: 1200px) {
-	.container {
-		max-width: 90%;
-	}
-}
 @media screen and (min-width: 768px) {
 	.desktop {
 		display: block;
+	}
+
+	#skill .containter {
+		max-width: 90%;
 	}
 	.mobile {
 		display: none;
