@@ -65,7 +65,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	height: 110vh;
+	/* height: 100vh; */
 	padding-top: 100px;
 	background-image: url('../assets/bookandpen_blurred-min.jpg');
 	background-repeat: no-repeat;
@@ -361,6 +361,7 @@ body {
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 5%;
 	background-color: rgba(199, 199, 199, 0.521);
 }
 #aboutContent {
@@ -372,6 +373,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
+	font-family: 'Arsenal', serif;
 }
 
 #about {
@@ -379,7 +381,6 @@ body {
 	margin: 0 auto;
 	margin: 0;
 	color: #313131;
-	font-weight: bold;
 	/*-webkit-animation: colorchange 20s infinite alternate;*/
 }
 
@@ -536,15 +537,12 @@ body {
 	transition: transform 0.2s linear;
 }
 
-/*if the screen min width is 1200 change the max width of container*/
-@media (min-width: 1200px) {
-	.container {
-		max-width: 90%;
-	}
-}
 @media screen and (min-width: 768px) {
 	.desktop {
 		display: block;
+	}
+	.container {
+		max-width: 90%;
 	}
 
 	.mobile {
