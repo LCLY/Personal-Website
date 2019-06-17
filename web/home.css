@@ -391,7 +391,7 @@ body {
 }
 #aboutContentBox {
 	position: relative;
-	width: 30rem;
+	width: 35rem;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(199, 199, 199, 0.521);
@@ -399,8 +399,8 @@ body {
 #aboutContent {
 	position: relative;
 	text-align: left;
-	width: 95%;
-	font-size: 18px;
+	width: 85%;
+	font-size: 22px;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
