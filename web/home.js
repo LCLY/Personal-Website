@@ -83,15 +83,15 @@ $(document).ready(function() {
 			window.innerHeight,
 	);
 
-	//onload set the height of the cloud and the homepage
-	$('#firstparallax').css('height', window.innerHeight);
-	$('#cloud1').css('height', window.innerHeight);
-	//set the position of the title - 40% of the screen height
-	$('#title').css('top', window.innerHeight * (40 / 100));
-	//if the width of the browser and the width of the screen is less than
-	if (window.innerWidth < 1080 || screen.width < 1920) {
-		$('#aboutContentBox').css('width', (window.innerWidth * 60) / 100);
-	}
+	// //onload set the height of the cloud and the homepage
+	// $('#firstparallax').css('height', window.innerHeight);
+	// $('#cloud1').css('height', window.innerHeight);
+	// //set the position of the title - 40% of the screen height
+	// $('#title').css('top', window.innerHeight * (40 / 100));
+	// //if the width of the browser and the width of the screen is less than
+	// if (window.innerWidth < 1080 || screen.width < 1920) {
+	// 	$('#aboutContentBox').css('width', (window.innerWidth * 60) / 100);
+	// }
 
 	console.log('screen height: ' + screen.height + ' screen width: ' + screen.width);
 
@@ -172,16 +172,16 @@ TxtRotate.prototype.tick = function() {
 function resizeFirstPage() {
 	//var txt = (x += 1);
 	//document.getElementById("demo").innerHTML = txt;
-	$('#firstparallax').css('height', window.innerHeight);
-	console.log('window innerHeight: ' + window.innerHeight);
-	//readjust the height of the cloud to 87% of the screen height
-	$('#cloud1').css('height', window.innerHeight);
-	//40% of the screen height
-	$('#title').css('top', window.innerHeight * (40 / 100));
-	//if the width of the browser and the width of the screen is less than
-	if (window.innerWidth < 1080 || screen.width < 1920) {
-		$('#aboutContentBox').css('width', (window.innerWidth * 60) / 100);
-	} else {
-		$('#aboutContentBox').css('width', (window.innerWidth * 40) / 100);
-	}
+	// $('#firstparallax').css('height', window.innerHeight);
+	// console.log('window innerHeight: ' + window.innerHeight);
+	// //readjust the height of the cloud to 87% of the screen height
+	// $('#cloud1').css('height', window.innerHeight);
+	// //40% of the screen height
+	// $('#title').css('top', window.innerHeight * (40 / 100));
+	// //if the width of the browser and the width of the screen is less than
+	// if (window.innerWidth < 1080 || screen.width < 1920) {
+	// 	$('#aboutContentBox').css('width', (window.innerWidth * 60) / 100);
+	// } else {
+	// 	$('#aboutContentBox').css('width', (window.innerWidth * 40) / 100);
+	// }
 }

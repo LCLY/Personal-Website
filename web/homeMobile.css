@@ -66,7 +66,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	height: 110vh;
+	/* height: 100vh; */
 	padding-top: 100px;
 	background-image: url('../assets/bookpenvertical.jpg');
 	background-repeat: no-repeat;
@@ -423,7 +423,7 @@ body {
 /*Portfolio Section*/
 #portfolioTitle {
 	text-align: center;
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: bold;
 	font-family: 'Bungee Shade', cursive;
 }
@@ -558,12 +558,12 @@ body {
 }
 
 .card-font {
-	font-size: 15px;
+	font-size: 13px;
 	font-family: 'Exo', sans-serif;
 }
 
 .card-font2 {
-	font-size: 14.5px;
+	font-size: 13px;
 	font-family: 'Exo', sans-serif;
 }
 

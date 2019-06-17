@@ -65,7 +65,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	height: 110vh;
+	/* height: 110vh; */
 	padding-top: 100px;
 	background-image: url('../assets/bookandpen_blurred-min.jpg');
 	background-repeat: no-repeat;
@@ -107,7 +107,7 @@ body {
 #cloud1 {
 	top: -128px;
 	position: relative;
-	/*height: 87%;*/
+	/* height: 100%; */
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
@@ -276,6 +276,13 @@ body {
 		0 20px 20px rgba(0, 0, 0, 0.15); */
 }
 
+#titleHeader {
+	position: relative;
+	display: inline-block;
+	font-family: 'Poiret One', cursive;
+	font-size: 100px;
+}
+
 #title2 {
 	position: relative;
 	display: inline-block;
@@ -289,11 +296,6 @@ body {
 }
 #title2Header {
 	font-size: 80px;
-}
-
-#titleHeader {
-	font-family: 'Poiret One', cursive;
-	font-size: 100px;
 }
 
 #title3 {
@@ -358,7 +360,7 @@ body {
 }
 #aboutContentBox {
 	position: relative;
-	width: 40%;
+	width: 30rem;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(199, 199, 199, 0.521);
@@ -372,6 +374,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
+	font-family: 'Halant', serif;
 }
 
 #about {
@@ -540,20 +543,7 @@ body {
 		color: pink;
 	}
 }
-#cloud_1 {
-	position: relative;
-	height: 100%;
-	filter: brightness(120%);
-	filter: opacity(60%);
-	/* position: absolute; */
-	background-image: url('../assets/cloud.png');
-	background-size: cover;
-	background-attachment: fixed;
-	animation: animate 30s linear infinite;
-	-ms-animation: animate 30s linear infinite;
-	-moz-animation: animate 30s linear infinite;
-	-webkit-animation: animate 30s linear infinite;
-}
+
 .fa-plus-circle {
 	color: white;
 	transform: rotate(0deg);
@@ -577,7 +567,6 @@ body {
 	#skill .container {
 		max-width: 90%;
 	}
-
 	.mobile {
 		display: none;
 	}
