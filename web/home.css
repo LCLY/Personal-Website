@@ -65,7 +65,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	/* height: 100vh; */
+	height: 110vh;
 	padding-top: 100px;
 	background-image: url('../assets/bookandpen_blurred-min.jpg');
 	background-repeat: no-repeat;
@@ -105,9 +105,10 @@ body {
 
 /*Cloud animation*/
 #cloud1 {
-	top: -128px;
-	position: relative;
-	/*height: 87%;*/
+	/* top: -128px; */
+	position: absolute;
+	/* height: 100%; */
+	height: 100%;
 	filter: brightness(120%);
 	filter: opacity(60%);
 	/* position: absolute; */
@@ -121,7 +122,7 @@ body {
 }
 
 #cloud_1 {
-	position: relative;
+	position: absolute;
 	height: 100%;
 	filter: brightness(120%);
 	filter: opacity(60%);
@@ -265,10 +266,13 @@ body {
 #title {
 	position: relative;
 	display: inline-block;
+	margin-top: 50%;
+	margin-bottom: 50%;
 	width: 100%;
 	/* right: 50%; */
 	text-align: center;
 	align-content: center;
+
 	/* text-shadow: 4px 4px black; */
 	/* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa,
 		0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
@@ -358,10 +362,9 @@ body {
 }
 #aboutContentBox {
 	position: relative;
-	width: 40%;
+	width: 30rem;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 5%;
 	background-color: rgba(199, 199, 199, 0.521);
 }
 #aboutContent {
@@ -373,7 +376,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
-	font-family: 'Arsenal', serif;
+	font-family: 'Halant', serif;
 }
 
 #about {
@@ -508,20 +511,7 @@ body {
 		color: pink;
 	}
 }
-#cloud_1 {
-	position: relative;
-	height: 100%;
-	filter: brightness(120%);
-	filter: opacity(60%);
-	/* position: absolute; */
-	background-image: url('../assets/cloud.png');
-	background-size: cover;
-	background-attachment: fixed;
-	animation: animate 30s linear infinite;
-	-ms-animation: animate 30s linear infinite;
-	-moz-animation: animate 30s linear infinite;
-	-webkit-animation: animate 30s linear infinite;
-}
+
 .fa-plus-circle {
 	color: white;
 	transform: rotate(0deg);
@@ -537,14 +527,16 @@ body {
 	transition: transform 0.2s linear;
 }
 
+/*if the screen min width is 1200 change the max width of container*/
+@media (min-width: 1200px) {
+	.container {
+		max-width: 90%;
+	}
+}
 @media screen and (min-width: 768px) {
 	.desktop {
 		display: block;
 	}
-	.container {
-		max-width: 90%;
-	}
-
 	.mobile {
 		display: none;
 	}
