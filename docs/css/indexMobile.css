@@ -23,6 +23,7 @@ body {
 	background-image: url('../assets/jumpoutvertical.png');
 
 	/* Set a specific height */
+	height: 100%;
 	height: 100vh;
 
 	/* Create the parallax scrolling effect */
@@ -63,10 +64,11 @@ body {
 
 #page {
 	/* position: relative; */
+	display: inline-block;
 	background-color: white;
 	color: black;
 	font-size: 23px;
-	/* height: 100vh; */
+	height: 100vh;
 	padding-top: 100px;
 	background-image: url('../assets/bookpenvertical.jpg');
 	background-repeat: no-repeat;
@@ -530,13 +532,6 @@ body {
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	transition: transform 0.2s linear;
-}
-
-/*if the screen min width is 1200 change the max width of container*/
-@media (min-width: 1200px) {
-	.container {
-		max-width: 90%;
-	}
 }
 
 @media screen and (max-width: 768px) {
