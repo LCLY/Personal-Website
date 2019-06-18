@@ -542,6 +542,11 @@ body {
 		display: block;
 	}
 }
+/*adjust mobile card width*/
+.card {
+	width: 300px;
+	margin: 0 auto;
+}
 
 .card-title {
 	font-family: 'Exo', sans-serif !important;
@@ -552,7 +557,7 @@ body {
 }
 
 .card-font {
-	font-size: 13px;
+	font-size: 15px;
 	font-family: 'Exo', sans-serif;
 }
 
