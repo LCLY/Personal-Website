@@ -106,13 +106,11 @@ body {
 /*Cloud animation*/
 #cloud1 {
 	position: absolute;
-	display: inline-block;
 	top: 26px;
 	height: 100vh;
 	width: 100%;
 	filter: brightness(120%);
 	filter: opacity(60%);
-	/* position: absolute; */
 	background-image: url('../assets/cloud.png');
 	background-attachment: fixed;
 	background-size: cover;
@@ -598,4 +596,30 @@ body {
 .card-font3 {
 	font-size: 19px;
 	font-family: 'Exo', sans-serif;
+}
+
+.card__hover {
+	transition: transform 0.5s;
+}
+.card__hover::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+	content: '';
+	opacity: 0;
+	z-index: -1;
+}
+.card__hover:hover,
+.card__hover:focus {
+	transform: scale3d(1.006, 1.006, 1);
+}
+.card__hover:hover::after,
+.card__hover:focus::after {
+	opacity: 1;
+	transform: translateZ(0);
+	backface-visibility: hidden;
 }
