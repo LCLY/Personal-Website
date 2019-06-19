@@ -570,3 +570,6 @@ body {
 	font-size: 12px;
 	font-family: 'Exo', sans-serif;
 }
+#cardDeck {
+	margin-top: 10%;
+}

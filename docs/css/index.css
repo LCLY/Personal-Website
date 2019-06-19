@@ -94,7 +94,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 20px;
-	height: 100vh;
+	height: 120vh;
 	padding-top: 100px;
 	background-image: url('../assets/computer.jpg');
 	background-repeat: no-repeat;
@@ -111,6 +111,7 @@ body {
 	width: 100%;
 	filter: brightness(120%);
 	filter: opacity(60%);
+	opacity: 0.6;
 	background-image: url('../assets/cloud.png');
 	background-attachment: fixed;
 	background-size: cover;
@@ -125,6 +126,7 @@ body {
 	height: 100%;
 	filter: brightness(120%);
 	filter: opacity(60%);
+	opacity: 0.6;
 	/* position: absolute; */
 	background-image: url('../assets/cloud.png');
 	background-size: cover;
@@ -615,11 +617,16 @@ body {
 }
 .card__hover:hover,
 .card__hover:focus {
-	transform: scale3d(1.006, 1.006, 1);
+	transform: scale3d(1.05, 1.05, 1.05);
+	cursor: pointer;
 }
 .card__hover:hover::after,
 .card__hover:focus::after {
 	opacity: 1;
 	transform: translateZ(0);
 	backface-visibility: hidden;
+}
+
+#cardDeck {
+	margin-top: 5%;
 }
