@@ -630,3 +630,13 @@ body {
 #cardDeck {
 	margin-top: 5%;
 }
+
+/* card text*/
+.cardText {
+	text-align: left;
+	font-size: 0.95rem;
+}
+
+.cardCategory {
+	margin-left: 0.5rem;
+}
